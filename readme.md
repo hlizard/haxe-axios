@@ -13,6 +13,7 @@ Then put `-lib axios` into your hxml.
 
 ```haxe
 var axios = axios.Axios.create();
+var axios:axios.Axios.AxiosInstance = untyped __js__('axios.create()');
 
 axios.get('/user?ID=12345')
     .then(function(response: axios.AxiosResponse<Dynamic>) {
